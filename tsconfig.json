@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonJS",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "ES2018",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
