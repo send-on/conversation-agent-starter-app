@@ -52,24 +52,6 @@ router.get('/call', async (req, res) => {
     }),
   };
 
-  console.log('relayParams', relayParams);
-
-  const conversationRelay = connect.conversationRelay(relayParams);
-  conversationRelay.language({
-    code: 'es-ES',
-    ttsProvider: 'Elevenlabs',
-    voice: 'g6xIsTj2HwM6VR4iXFCw',
-    transcriptionProvider: 'google',
-    speechModel: 'long'
-  });
-  conversationRelay.language({
-    code: 'en-US',
-    ttsProvider: 'Elevenlabs',
-    voice: 'g6xIsTj2HwM6VR4iXFCw',
-    transcriptionProvider: 'deepgram',
-    speechModel: 'nova-3-general'
-  });
-
   // Send TwiML response
   res.type('text/xml');
   res.send(response.toString());
